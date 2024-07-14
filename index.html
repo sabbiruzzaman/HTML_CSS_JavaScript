@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noman- Daveloper Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(8, 6, 6);
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(24, 1, 19);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: wheat;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.02rem;
+            color: rgb(204, 10, 10);
+        }
+
+        main hr {
+            border: 0cap;
+            background: greenyellow;
+            height: 1.2px;
+            margin: 40px 80px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 33%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .leftsection .buttons {
+            padding: 50px;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgb(75, 13, 75);
+            border-radius: 6px;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(19, 123, 172);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(119, 49, 101);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 40px;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 110px;
+        }
+
+        .imge-top {
+            width: 23px;
+            position: relative;
+            top: -37px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 85px;
+            width: 150px;
+            left: -100px;
+        }
+
+        .contact-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .contact-left {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .contact-left-title h2 {
+            font-weight: 600;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .contact-left-title hr {
+            border: none;
+            width: 120px;
+            height: 5px;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+
+        .contct-input {
+            width: 400px;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            color: rgb(49, 12, 99);
+            border-radius: 50px;
+        }
+
+        .contct-textarea {
+            height: 140px;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            padding-top: 15px;
+            border-radius: 20px;
+            width: 400px;
+            color: rgb(7, 40, 70);
+        }
+
+        .contct-textarea:focus {
+            border: 3px rgb(8, 8, 114);
+        }
+
+        .contct-textarea::placeholder {
+            color: rgb(109, 14, 14);
+            font-style: oblique;
+        }
+
+        .contct-input:focus {
+            border: 2px greenyellow;
+        }
+
+        .contct-input::placeholder {
+            color: rgb(129, 22, 31);
+        }
+
+        .sabmit-button {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            color: aliceblue;
+            font-size: 16px;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            background: lime;
+            cursor: pointer;
+        }
+
+        .contact-right img {
+            width: 360px;
+            border-radius: 100%;
+        }
+
+        footer {
+            background-color: rgb(3, 14, 24);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 120px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 230px;
+        }
+
+        footer .footer-right {
+            text-align: center;
+            padding: 12px;
+        }
+
+        @media (max-width:800px) {
+            .contct-input {
+                width: 80vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Noman's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Home" class="firstsection">
+            <div class="leftsection">Hi, my name is <samp class="purple">Noman</samp>
+                <div>and I am a
+                    <br>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="cv.pdf"><button class="btn">Download Resume</button></a>
+                        <a href="https://github.com/sabbiruzzaman"><button class="btn">Visit Github</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="wb.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="About" class="secondSection">
+            <samp class="text-gray">What I have done so far </samp>
+            <h1>My skill</h1>
+            <div class="box">
+                <div class="vertical"><img class="imge-top" src="developer.png" alt=""></div>
+                <div class="vertical-title">Oracle SQL</div>
+                <div class="vertical"><img class="imge-top" src="developer.png" alt=""></div>
+                <div class="vertical-title">Oracle PLSQL</div>
+                <div class="vertical"><img class="imge-top" src="developer.png" alt=""></div>
+                <div class="vertical-title">Oracle Apex</div>
+                <div class="vertical"><img class="imge-top" src="developer.png" alt=""></div>
+                <div class="vertical-title">HTML,CSS,JavaScript</div>
+            </div>
+
+        </section>
+        <div id="Contact" class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Contact Me</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="dbc1899c-bc58-4da6-8b78-ff906e00351e">
+                <input type="text" name="name" placeholder="Your Name" class="contct-input" required>
+                <input type="email" name="email" placeholder="Your email" class="contct-input" required>
+                <textarea name="massage" placeholder="Your massage" class="contct-textarea" required></textarea>
+                <button class="sabmit-button" type="submit">Submit</button>
+            </form>
+            <div class="contact-right">
+                <img src="0050567.jpg">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Noman's Daveloper Portfolio </h3>
+            </div>
+            <div class="footer-secound">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-right">
+            &#169; nomanwebwsaveloper.com || All rights Reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Database Degien', 'Web Daveloper', 'Other'],
+            typeSpeed: 50,
+            loop: true,
+        });
+    </script>
+
+</body>
+
+</html>
